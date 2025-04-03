@@ -9,11 +9,13 @@ import 'package:icon_font_generator/src/otf/io.dart';
 import 'package:icon_font_generator/src/utils/logger.dart';
 import 'package:path/path.dart' as p;
 import 'package:yaml/yaml.dart';
+import 'package:pub_semver/pub_semver.dart';
 
 final _argParser = ArgParser(allowTrailingOptions: true);
 final formatter = DartFormatter(
   pageWidth: 80,
-  fixes: StyleFix.all,
+  languageVersion: Version(3,0,0),
+  // fixes: StyleFix.all,
 );
 
 void main(List<String> args) {
