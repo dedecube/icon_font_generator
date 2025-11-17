@@ -30,5 +30,7 @@
 .pub/
 build/
 
-
 my_*
+
+# FVM Version Cache
+.fvm/
